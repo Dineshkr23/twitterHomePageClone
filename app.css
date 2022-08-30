@@ -1,0 +1,266 @@
+body {
+    margin: 0rem;
+    height: 100vh;
+}
+
+
+/* Header Stylings */
+.header {
+    position: sticky;
+    top: 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0.8rem;
+}
+
+.header_links {
+    margin-left: -11rem;
+}
+
+.header_links>a {
+    color: #6c757c;
+    text-decoration: none;
+    margin-left: 0.1rem;
+    font-weight: bolder;
+    padding: 0.7rem 2rem;
+    border-radius: 1rem;
+    transition: background-color 0.5s, transform 0.5s;
+}
+
+.fa-twitter {
+    margin-left: -10rem;
+    color: #4BB3F2;
+    font-size: 2rem;
+    padding: 0.5rem;
+    border-radius: 100%;
+    transition: background-color 0.5s, transform 0.5s;
+}
+
+.header_btn {
+    outline: none;
+    border: none;
+    background-color: #4BB3F2;
+    border-radius: 1rem;
+    padding: 0.5rem 1.2rem;
+    color: #ffffff;
+    font-weight: bolder;
+    transition: background-color 0.5s, transform 0.5s;
+}
+
+
+/* App containers styling */
+.app_container {
+    background-color: #E7ECF0;
+    width: 95%;
+    height: 93%;
+    margin: auto;
+}
+
+.profile_container,
+.tweets_container,
+.follow_container {
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+}
+
+.items_container {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.profile_container {
+    background-color: #ffffff;
+    width: 300px;
+    height: 50%;
+}
+
+.tweets_container {
+    background-color: #ffffff;
+    width: 816px;
+}
+
+.follow_container {
+    background-color: #ffffff;
+    width: 300px;
+    height: 50%;
+    padding: 0.5rem;
+}
+
+
+/* twitter follow component stylings */
+.follow_text {
+    margin: 0rem;
+}
+
+.follow_list,
+.tweet_list {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.followImg_div {
+    width: 22%;
+}
+
+.followDetails_div {
+    width: 78%;
+}
+
+.twitterHandler {
+    color: #6c757c;
+}
+
+.btn {
+    background-color: #ffffff;
+    border: 1px solid #4BB3F2;
+    border-radius: 1rem;
+    color: #4BB3F2;
+    padding: 0.3rem 1.2rem;
+    font-weight: bolder;
+    transition: background-color 0.5s, color 0.5s, transform 0.5s;
+}
+
+
+/* Profile image stylings */
+.profile_img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+
+/* Tweets component stylings */
+.tweetDetails_div {
+    width: 90%;
+}
+
+hr {
+    border-top: 0.01rem solid #bac5ce;
+}
+
+
+/* Profile component stylings */
+.profile_bgTextDiv {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem;
+}
+
+.profile_bgText {
+    margin: 0rem;
+}
+
+.profileImgText_Div {
+    display: flex;
+}
+
+.profileTwtHandler {
+    margin-top: -1rem;
+}
+
+.profileName {
+    text-decoration: underline;
+}
+
+.profile_imgDiv {
+    padding: 0px;
+    width: 30%;
+    margin-top: -2rem;
+    margin-left: 1rem;
+}
+
+.imgOverLap {
+    width: 5rem;
+    height: 5rem;
+    border: 0.4rem solid #ffffff;
+    border-radius: 100%;
+}
+
+.profile_textDiv {
+    width: 70%;
+    margin-top: -0.8rem;
+    margin-left: 1rem;
+}
+
+.profileStats_Div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.numBg {
+    color: #4BB3F2;
+}
+
+
+/* Responsive media queries */
+@media (max-width:1025px) {
+    .items_container {
+        display: block;
+    }
+
+    .profile_container {
+        width: 100%;
+    }
+
+    .tweets_container {
+        width: 100%;
+    }
+
+    .follow_container {
+        width: 98%;
+    }
+
+    .header_links {
+        margin-left: 0rem;
+    }
+
+    .header_links>a {
+        padding: 0.3rem;
+        margin-left: 0rem;
+    }
+
+    .fa-twitter {
+        margin-left: 0rem;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1598px) {
+    .follow_list {
+        display: block;
+    }
+}
+
+
+/* Hover effects */
+.header_btn:hover {
+    cursor: pointer;
+    background-color: #18a2f7;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #4BB3F2;
+    color: #ffffff;
+}
+
+.header_links>a:hover {
+    cursor: pointer;
+    background-color: #e1e4e5;
+}
+
+.fa-twitter:hover {
+    cursor: pointer;
+    color: #18a2f7;
+    background-color: #ceeafb;
+}
+
+.userName:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
